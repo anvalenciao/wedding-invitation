@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Invitación virtual para la boda de Andrés y Viviana">
+  <meta name="keywords" content="Wedding, Andrés, Viviana">
+  <meta name="author" content="Andrés Valencia">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link type="image/png" sizes="96x96" rel="icon" href="favicon.png">
+  <!-- preload woff2 fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <title>Invitación Boda de Andrés y Viviana</title>
+
+  <!-- python3 -m http.server -->
+  <!-- Bootstrap Reboot CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap-reboot.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <canvas id="canvas-birds">
+    Your browser does not support the canvas element.
+  </canvas>
+  <div id="sky">
+    <div id="clouds">
+      <div class="c1 one"></div>
+      <div class="c1 two"></div>
+      <div class="c1 three"></div>
+      <div class="c1 four"></div>
+      <div class="c2 one"></div>
+      <div class="c2 two"></div>
+      <div class="c2 three"></div>
+      <div class="c2 four"></div>
+    </div>
+  </div>
+
+  <section id="guest">
+    <p>¡Hola <span id="guest-name">Guest Name</span>!</p>
+  </section>
+
+  <section id="introduction">
+    <img src="img/check_circle_FILL1_wght400_GRAD0_opsz48.svg" width="48" height="48" alt="Icon Check">
+    <p>Con la bendición de Dios y nuestros padres, nosotros;</p>
+    <h2>Viviana <span>&</span> Andrés</h2>
+  </section>
+
+  <section id="invitation">
+    <img src="img/token_FILL1_wght400_GRAD0_opsz48.svg" width="48" height="48" alt="Icon Token">
+    <p class="subtitle">Tenemos el agrado de invitarlo(a) a celebrar nuestra unión en Sagrado Matrimonio, el día sábado primero (1) de octubre, 2022. <br>En la Parroquia San Simón Stock en Villa del Río, Bogotá, a las 3:00 p.m.</p>
+    <a href="https://goo.gl/maps/6sbd896Eo9T5G87DA" target="_blank">
+    <img class="map" src="img/church-map.webp" width="320" height="200" alt="Mapa de la Parroquia San Simón Stock">
+      <!--Clic aquí para interactuar con el mapa-->
+    </a>
+  </section>
+
+  <section id="celebration">
+    <img src="img/celebration_FILL1_wght400_GRAD0_opsz48.svg" width="48" height="48" alt="Icon Celebration">
+    <p class="subtitle">Seguidamente, los invitamos a la celebración que tendrá lugar en Mi Gran Parrilla Boyacense, en la Calle 57d # 78h - 14, C.C. Paseo Villa del Río, Bogotá.</p>
+    <a href="https://goo.gl/maps/Lsaaoa3rFenkRnjH6" target="_blank">
+      <img class="map" src="img/road-map.webp" width="320" height="200" alt="Mapa ruta desde la Parroquia San Simón Stock a Mi Gran Parrilla Boyacense">
+        <!--Clic aquí para interactuar con el mapa-->
+      </a>
+  </section>  
+
+  <section id="our-wedding-day">
+    <img id="heart" src="img/favorite_FILL1_wght400_GRAD0_opsz48.svg" width="48" height="48" alt="Icon Favorite">
+    <h2 class="title">Día de la boda</h2>
+    <p class="subtitle">Línea de tiempo del evento</p>
+    <div id="timeline">
+      
+        <article>
+          <div class="content">
+            <h3>Participamos</h3>
+            <p>Ceremonia Sacramento del matrimonio.</p>
+          </div>
+          <div class="time">
+            <h4>3:00 p.m.</h4>
+          </div>
+        </article>
+        
+        <article>
+          <div class="content">
+            <h3>Compartimos</h3>
+            <p>Fotografías y videos.</p>
+          </div>
+          <div class="time">
+            <h4>4:30 p.m.</h4>
+          </div>
+        </article>
+
+        <article>
+          <div class="content">
+            <h3>Cenamos</h3>
+            <p>Rollitos de Pollo Pasión o Mignon de cerdo a la pimienta.</p>
+          </div>
+          <div class="time">
+            <h4>5:30 p.m.</h4>
+          </div>
+        </article>
+
+        <article>
+          <div class="content">
+            <h3>Endulzamos</h3>
+            <p>Corte de la torta del matrimonio.</p>
+          </div>
+          <div class="time">
+            <h4>6:30 p.m.</h4>
+          </div>
+        </article>
+
+        <div style="clear:both;"></div>
+      
+    </div>
+  </section>
+
+  <section id="gift">
+    <img src="img/redeem_FILL1_wght400_GRAD0_opsz48.svg" width="48" height="48" alt="Icon Check">
+    <p>La casa está armada, así que no se complique, ahora, si quiere ayudar con la luna de miel, el regalo puede ser una "lluvia de sobres".</p>
+  </section>
+
+  <section id="final-phrase">
+    <p class="subtitle">Será un honor contar con su presencia.</p>
+  </section>
+
+  <script src="js/birds.js"></script>
+  <script src="js/guest.js"></script>
+</body>
+
+</html>
